@@ -34,5 +34,33 @@
         <td>$5</td>
       </tr>
   </table>
+  <hr>
+  <h2>Sqrt Decomposition</h2>
+  <blockquote> mathematics, the square root of a matrix extends the notion of square root from numbers to matrices. 
+      A matrix B is said to be a square root of A if the matrix product BB is equal to A</p3>
+      <br>
+      <a href="https://en.wikipedia.org/wiki/Square_root_of_a_matrix">Source</a>
+      </blockquote>
+
+
+ <pre>
+   
+        int sum = 0;
+int c_l = l / len,   c_r = r / len;
+if (c_l == c_r)
+    for (int i=l; i<=r; ++i)
+        sum += a[i];
+else {
+    for (int i=l, end=(c_l+1)*len-1; i<=end; ++i)
+        sum += a[i];
+    for (int i=c_l+1; i<=c_r-1; ++i)
+        sum += b[i];
+    for (int i=c_r*len; i<=r; ++i)
+        sum += a[i];
+}
+     
+ </pre>     
+  
+  
 </body>
 </html>
